@@ -1,8 +1,20 @@
 <% content_for :title do %>Ignite World Time Dashboard<% end %>
-<div class="gridster">
-  <ul>
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">       
+<div class="gridster"> 
+ <ul>
+    <!-- li data-row="3" data-col="2" data-sizex="1" data-sizey="1">       
 	<div data-view="TwelveHourClock"></div>
+    </li -->   
+ <li data-row="1" data-col="1" data-sizex="4" data-sizey="1">
+       <div data-view="WorldClock" class="widget widget-world-clock"></div>
     </li>
-  
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="2">
+        <div data-id="a_timeline" data-view="Timeline" data-title="Timeline"></div>
+    </li>
+  <li data-row="3" data-col="2" data-sizex="1" data-sizey="1">
+  <div data-id="sydney" data-view="Worldclock" data-timezone="Australia/Sydney" data-title="Sydney"></div>
+  </li>
+<li data-row="2" data-col="2" data-sizex="2" data-sizey="1">
+  <div data-id="auckland" data-view="Worldclock" data-timezone="Pacific/Auckland" data-title="Auckland"></div>
+  </li>
+ </ul>
 </div>

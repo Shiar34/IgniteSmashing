@@ -5,14 +5,15 @@ class Dashing.TwelveHourClock extends Dashing.Widget
 
   startTime: =>
     today    = new Date()
-    hours    = @getHours(today.getHours())
+    hours    = @formatTime(today.getHours()) 
+ #   hours    = @getHours(today.getHours())
     minutes  = @formatTime(today.getMinutes())
     meridiem = @getMeridiem(today.getHours())
-    @set('time', hours + ":" + minutes + " " + meridiem)
+    @set('time', hours + ":" + minutes)
     @set('date', today.toDateString())
 
-  getHours: (i) ->
-    ((i + 11) %% 12) + 1
+#  getHours: (i) ->
+#    ((i + 11) %% 12) + 1
 
   getMeridiem: (i) ->
     if i < 12 then "AM" else "PM"

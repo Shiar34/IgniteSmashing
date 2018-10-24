@@ -1,0 +1,28 @@
+# COLOR GUIDE
+# holiday = lightgreen
+# deadline = red
+# release = pink
+# misc = white
+
+events:
+  - name: "Dubai 7's"
+    date: "Nov 29, 2018"
+    background: "red"
+  - name: "Cape Town 7's"
+    date: "Dec 8, 2018"
+    background: "red"
+  - name: "Christmas Day Holiday!"
+    date: "Dec 25, 2018"
+    background: "lightgreen"
+  - name: "Boxing Day"
+    date: "Dec 26, 2018"
+    background: "lightgreen"
+  - name: "New Year's Day"
+    date: "Jan 1, 2019"
+    background: "lightgreen"
+  - name: "Day after New Years"
+    date: "Jan 2, 2019"
+    background: "lightgreen"
+  - name: "Waitangi Day"
+    date: "Feb 6, 2019"
+    background: "lightgreen"
